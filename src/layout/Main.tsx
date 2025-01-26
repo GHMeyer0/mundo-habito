@@ -3,7 +3,7 @@ import HomeIcon from '@mui/icons-material/Home';
 import MenuIcon from '@mui/icons-material/Menu';
 import { AppBar, Box, CssBaseline, Fab, IconButton, styled, Toolbar } from "@mui/material";
 import { useState } from 'react';
-import { Outlet, useLocation, useNavigate } from "react-router-dom";
+import { Outlet, useNavigate } from "react-router-dom";
 import TinderGoalsModal from '../components/TinderGoalsModal';
 type Props = {}
 
@@ -19,7 +19,6 @@ const StyledFab = styled(Fab)({
 
 const Main = (props: Props) => {
   const navigate = useNavigate();
-  const { pathname } = useLocation();
   const [tinderOpen, setTinderOpen] = useState(false);
 
 
