@@ -113,7 +113,7 @@ const MainPage = (props: Props) => {
     const cloudWidth = 70;
     const cloudHeight = 30;
 
-    const showLightning = score > 4; // quando score < -4
+    const showLightning = score < 0; // quando score < -4
     // Desenho simples de nuvem (você pode usar <path> ou <ellipse> sobrepostas)
     // Aqui uso um <g> animado de um lado para outro.
     return (

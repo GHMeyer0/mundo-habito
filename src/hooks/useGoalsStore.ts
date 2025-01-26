@@ -1,5 +1,6 @@
 // hooks/useGoalsStore.ts
 import { create } from "zustand";
+
 // podemos usar uuid, mas aqui vou usar Date.now() + um contador simples
 let idCounter = 0;
 
